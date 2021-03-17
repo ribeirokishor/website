@@ -1,0 +1,54 @@
+@import '../../styles/shared.scss';
+
+.header-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 95px);
+    margin-top: 95px;
+
+    .salutation {
+        font-size: $font-size-l;
+        margin-bottom: 20px;
+    }
+    
+    .name {
+        font-size: 70px;
+        margin-bottom: 10px;
+    }
+    
+    .role {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .short-bio {
+        font-size: $font-size-l;
+        max-width: 380px;
+        line-height: 1.6;
+        margin: 0 0 30px;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-section .salutation {
+        font-size: 4vw;
+    }
+    
+    .header-section .name {
+        font-size: 10vw;
+    }
+    
+    .header-section {
+        padding: 75px 45px;
+    }
+    
+    .header-section .role {
+        font-size: 6vw;
+    }
+    
+    .header-section .short-bio {
+        font-size: 4.5vw;
+    }
+}

@@ -1,0 +1,68 @@
+@import '../../styles/shared.scss';
+
+.job-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .job-left-wrapper {
+        width: 250px;
+    }
+
+    .job-right-wrapper {
+        width: calc(100% - 250px);
+        font-size: $font-size-l;
+    }
+
+    .sub-heading {
+        font-weight: 700;
+        // color: $yellow-color;
+        // font-size: $font-size-xxl;
+    }
+    
+    .role {
+        padding-bottom: 5px;
+    }
+
+    .company {
+        font-size: 28px;
+        padding-bottom: 7px;
+        font-weight: 700;
+    }
+
+    ul {
+        margin: 0;
+        padding: 10px 0 0 20px;
+
+        li {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .job-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .job-wrapper .job-right-wrapper {
+        width: 100%;
+    }
+    
+    .responsibilites ul {
+        text-align: left;
+        padding-top: 20px;
+    }
+    
+    .responsibilites .sub-heading {
+        display: none;
+    }
+    
+    .job-wrapper .job-left-wrapper {
+        width: 100%;
+    }
+    
+    .job-wrapper .role {
+        padding-top: 10px;
+    }
+}

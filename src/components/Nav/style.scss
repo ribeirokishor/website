@@ -1,0 +1,135 @@
+@import '../../styles/shared.scss';
+
+nav {
+    padding: 0 75px;
+    background: $blue-color;
+    border-bottom: 2px solid $yellow-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 767px) {
+        padding: 10px 25px;
+    }
+
+    &.active {
+        span:nth-child(2) {
+            opacity: 0;
+        }
+    
+        span:nth-child(2) {
+            opacity: 0;
+        }
+    
+        span:first-child {
+            transform: rotate(45deg);
+            transform-origin: 0 0;
+            position: relative;
+            top: 1px;
+            left: 2px;
+        }
+    
+        span:last-child {
+            transform: rotate(-45deg);
+            transform-origin: 0% 0%;
+        }
+
+        ul {
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 88px;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            background: $blue-color;
+            padding: 0;
+
+            li {
+                padding: 20px 0;
+                border-bottom: 1px solid $yellow-color;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .logo-wrapper {
+        font-size: 33px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        border: 2px solid $yellow-color;
+        border-radius: 7px;
+        padding: 10px 6px 10px 8px;
+    }
+
+    .ham-menu {
+        display: none;
+        width: 30px;
+        height: 33px;
+        margin-left: auto;
+
+        span {
+            width: 100%;
+            display: block;
+            border: 2px solid $yellow-color;
+            margin-bottom: 7px;
+            // transition: all 0.5s ease-in-out;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            display: block;
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 35px 0;
+
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    li {
+        list-style: none;
+        padding-left: 100px;
+        font-size: $font-size-l;
+
+        @media only screen and (max-width: 1023px) {
+            padding-left: 50px;
+        }
+
+        &:first-child {
+            padding-left: 0;
+
+            
+        }
+
+        a {
+            cursor: pointer;
+
+            &:hover {
+                color: $yellow-color;
+            }
+        }
+    }
+
+    .active {
+        color: $yellow-color;
+    }
+}

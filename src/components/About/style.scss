@@ -1,0 +1,56 @@
+@import '../../styles/shared.scss';
+
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1023px) {
+        flex-direction: column-reverse;
+    }
+
+    .about-left-container, 
+    .about-right-container {
+        width: 45%;
+    }
+
+    .about-left-container {
+        font-size: $font-size-l;
+        width: 50%;
+
+        @media only screen and (max-width: 1023px) {
+            width: 100%;
+            max-width: 380px;
+            padding-top: 20px;
+        }
+    }
+
+    .about-right-container {
+        border: 5px solid $yellow-color;
+        font-size: 0;
+        border-radius: 30px;
+        overflow: hidden;
+        width: 40%;
+
+        @media only screen and (max-width: 1023px) {
+            width: 100%;
+            max-width: 380px;
+        }
+
+        p {
+            margin: 0 0 20px;
+        }
+    }
+
+    .skill-set ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 0 0 20px;
+    }
+    
+    .skill-set li {
+        width: 45%;
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "siteMetadata": {
+        "title": "Ribeiro Kishor Rajendran",
+        "description":
+          "Ribeiro Kishor Rajendran is a Front End Developer specializing in building websites and always hungry to learn new tools and technologies.",
+        "siteUrl": "http://localhost:3000",
+        "image": "/OG.png"
+      },
+    "navLinks": [{
+        "name": "Home",
+        "url": "home"
+    },{
+        "name": "About",
+        "url": "about"
+    }, {
+        "name": "Experience",
+        "url": "jobs"
+    }, {
+        "name": "Contact",
+        "url": "contact"
+    }],
+    "jobs" : [{
+        "company_name" : "Infosys Limited",
+        "company_website": "https://www.infosys.com/",
+        "job_period": "September 2014 - Current",
+        "role": "Tehnology Analyst",
+        "responsibilities" : [
+            "Write modern and maintainable code for Warner Music Group Artist Website",
+            "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, PHP, MySQL, Drupal, WordPress, Angular, React",
+            "Developing fully functional pixel-perfect pages",
+            "Developing fan engaging real-time activation such as quiz, meme generators, etc.",
+            "Bug fixing and Enhancements in the existing website based on Agile methodology (Kanban board).",
+            "Unit testing.",
+            "Deployment of code changes to Production."
+        ]
+    }]
+}

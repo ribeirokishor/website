@@ -1,0 +1,109 @@
+@import "../../styles/shared.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.5s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+button:focus,
+button:hover,
+button:active {
+    outline: none;
+}
+
+body {
+    background: $blue-color;
+    color: $grey-color;
+    font-family: $base-font-family;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px 0px 10px;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: $font-size-l;
+}
+
+section {
+    margin: 0px auto;
+    padding: 75px 75px;
+    max-width: 1000px;
+
+    @media only screen and (max-width: 767px) {
+        padding: 75px 50px;
+    }
+}
+
+.button {
+    font-size: $font-size-xl;
+    color: $yellow-color;
+    max-width: 200px;
+    text-align: center;
+    padding: 16px 20px;
+    border-radius: 5px;
+    border: 1px solid;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.button:hover {
+    background: $yellow-color;
+    color: $blue-color;
+    border-color: $yellow-color;
+}
+
+.section-title {
+    font-size: $font-size-heading;
+    color: $yellow-color;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 75px;
+    position: relative;
+
+    @media only screen and (max-width: 767px) {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    span {
+        position: relative;
+
+        &:after {
+            content: "";
+            border-top: 2px solid;
+            width: 65%;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 100px 0 40px;
+}

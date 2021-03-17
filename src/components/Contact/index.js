@@ -9,10 +9,10 @@ export default function Contact(props) {
             <div className="section-content">
                 <div className="content-inner-wrapper">
                     <p>
-                        I'm currently looking for opportunities in Front End Development anywhere in UK with visa sponshopship. 
+                        I'm currently looking for opportunities in Front End Development anywhere in UK with visa sponsorship. 
                     </p>
                     <p>
-                        If you find any portfolio suitable for your requirement, please get in touch by clicking the below button
+                        If you find my portfolio suitable for your requirement, please get in touch by clicking the below button
                     </p>
                     <div className="get-in-touch">
                         <a className="button" href="mailto:ribeirokishor12@gmail.com" target="_blank" rel="noreferrer">GET IN TOUCH</a>
